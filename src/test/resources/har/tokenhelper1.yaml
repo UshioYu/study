@@ -1,0 +1,16 @@
+---
+name: "tokenhelper1"
+actions:
+  gettoken:
+    formalParam: null
+    headers: null
+    body: ""
+    method: "get"
+    post: "https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=ww5ef451bf006ec894&corpsecret=EcEIog2OJ8AtO7PDaqt_yqHKqmYXqwSZKDhyfU1aSiU"
+    get: ""
+    url: ""
+    contentType: ""
+    query:
+      corpid: "ww5ef451bf006ec894"
+      corpsecret: "EcEIog2OJ8AtO7PDaqt_yqHKqmYXqwSZKDhyfU1aSiU"
+obVariables: null

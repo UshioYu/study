@@ -1,5 +1,7 @@
 package com.ushio.wechat.util;
 
+import java.util.HashMap;
+
 public class Constant {
 
     //用户信息
@@ -13,5 +15,8 @@ public class Constant {
     public static final String UPDATE_DEPARTMENT_URL = DOMAIN_URL + "/department/update";
     public static final String DELETE_DEPARTMENT_URL = DOMAIN_URL + "/department/delete";
     public static final String LIST_DEPARTMENT_URL = DOMAIN_URL + "/department/list";
+
+    //存储全局变量，这里具体主要就是token(yaml里面的saveGlobal是存储目标)
+    public static HashMap<String, String> globalVariables = new HashMap<>();
 
 }
