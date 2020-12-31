@@ -2,6 +2,7 @@ package com.ushio.wechat.yaml.test;
 
 import com.ushio.wechat.util.Constant;
 import com.ushio.wechat.yaml.model.ActionModel;
+import com.ushio.wechat.yaml.api.ModelRunApi;
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,8 +10,7 @@ import java.util.HashMap;
 /**
  * @author: ushio
  * @description:
- * 定义一个ActionModel，对应yaml的actions下的object
- * 可以理解为一个最小的方法obj，通过给它传参的方式去最后调用run()方法
+ * 定义一个ActionModel，通过给它传参的方式去调用runActionModel()方法
  * 模拟实现一次请求，实际还是通过RequestSpecification发了一次请求
  * 缺陷：参数和对象ActionModel的属性都需要手动传入
  **/
@@ -36,6 +36,6 @@ public class TestActionModelTest {
         query.put("corpsecret","${corpsecret}");
         model.setQuery(query);
 
-        model.run(actualParameter);
+        ModelRunApi.runActionModel(model,actualParameter);
     }
 }

@@ -1,4 +1,4 @@
-package com.ushio.wechat.helper;
+package com.ushio.wechat.yaml.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
@@ -16,7 +16,7 @@ import java.util.List;
  * @author: ushio
  * @description:
  **/
-public class ApiLoader {
+public class LoadApi {
 
     /**
      * 加载所有api Object对象，并保存到本列表中
@@ -33,6 +33,11 @@ public class ApiLoader {
         });
     }
 
+    /**
+     * 用ObjectMapper把yaml强转成ObjectModel.class
+     * @param path yaml或yaml集的路径(src/test/resources/api)
+     * @return
+     */
     public static ObjectModel loadObjModel(String path) {
         ObjectModel objectModel = new ObjectModel();
         try {
@@ -44,6 +49,11 @@ public class ApiLoader {
         return objectModel;
     }
 
+    /**
+     * 用ObjectMapper把yaml强转成ApiTestCaseModel.class
+     * @param path yaml或yaml集的路径(src/test/resources/testcase)
+     * @return
+     */
     public static ApiTestCaseModel loadTestCaseModel(String path){
         ApiTestCaseModel apiTestCaseModel = new ApiTestCaseModel();
         try {
@@ -55,6 +65,12 @@ public class ApiLoader {
         return  apiTestCaseModel;
     }
 
+    /**
+     * 从(src/test/resources/api)下加载的所有ObjectModel通过如下两个参数定位找到ActionModel
+     * @param name api下yaml下name节点
+     * @param actionName api下yaml下actions节点的key值
+     * @return
+     */
     public static ActionModel loadActionModel(String name, String actionName){
         ActionModel actionModel = new ActionModel();
 
