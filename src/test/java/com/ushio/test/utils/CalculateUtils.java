@@ -1,4 +1,4 @@
-package com.ushio.test.junit5.utils;
+package com.ushio.test.utils;
 
 /**
  * @author: ushio
@@ -11,10 +11,6 @@ public class CalculateUtils {
         for (int a : x)
             tmp += a;
         return tmp;
-    }
-
-    public static int plus(int x, int y) {
-        return x + y;
     }
 
     public static int minus(int x, int y) {
