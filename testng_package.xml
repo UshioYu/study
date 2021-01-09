@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite01" verbose="1">
+    <test name="test1">
+<!--        <packages>-->
+<!--            <package name="com.ushio.test.testng.p2"></package>-->
+<!--            <package name="com.ushio.test.testng.p3"></package>-->
+<!--        </packages>-->
+<!--        <groups>-->
+<!--            <define name="12">-->
+<!--                <include name="g31"/>-->
+<!--                <include name="g32"/>-->
+<!--            </define>-->
+<!--            <run>-->
+<!--                <include name="12"/>-->
+<!--                <include name="g33"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.ushio.test.testng.p3.Ng3Test">-->
+<!--                <methods>-->
+<!--                    <include name="ng31Test"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+
+        <parameter name="x" value="1"/>
+        <parameter name="y" value="2"/>
+        <parameter name="z" value="4"/>
+        <classes>
+            <class name="com.ushio.test.testng.TestNgTest">
+                <methods>
+                    <include name="paramaterTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

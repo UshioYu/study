@@ -1,6 +1,6 @@
 package com.ushio.test.junit5;
 
-import com.ushio.test.junit5.utils.CalculateUtils;
+import com.ushio.test.utils.CalculateUtils;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

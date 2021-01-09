@@ -38,6 +38,7 @@ public class BaseSnowBallTest {
             driver = new AndroidDriver(remoteUrl, desiredCapabilities);
             //隐式等待
             driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
