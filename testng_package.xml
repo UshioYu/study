@@ -23,15 +23,25 @@
 <!--            </class>-->
 <!--        </classes>-->
 
-        <parameter name="x" value="1"/>
-        <parameter name="y" value="2"/>
-        <parameter name="z" value="4"/>
-        <classes>
-            <class name="com.ushio.test.testng.TestNgTest">
-                <methods>
-                    <include name="paramaterTest"/>
-                </methods>
-            </class>
-        </classes>
+<!--        <parameter name="x" value="1"/>-->
+<!--        <parameter name="y" value="2"/>-->
+<!--        <parameter name="z" value="4"/>-->
+<!--        <classes>-->
+<!--            <class name="com.ushio.test.testng.TestNgTest">-->
+<!--                <methods>-->
+<!--                    <include name="paramaterTest"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+
+                <groups>
+                    <run>
+                        <include name="g1"/>
+                    </run>
+                </groups>
+                <classes>
+                    <class name="com.ushio.test.testng.MmmoTest">
+                    </class>
+                </classes>
     </test>
 </suite>

@@ -1,4 +1,4 @@
-package com.ushio.test;
+package com.ushio.test.demo;
 
 import org.junit.jupiter.api.Test;
 

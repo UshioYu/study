@@ -1,6 +1,6 @@
 package com.ushio.test.testng.p1;
 
-import com.sun.org.glassfish.gmbal.Description;
+import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
 /**
