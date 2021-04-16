@@ -1,0 +1,29 @@
+#注释
+resultList:
+  #name
+  - name: "ushio"
+    result: true
+  - name: "ushio1"
+    result: false
+  - name: "ushio2"
+    result: true
+  - name: "ushio3"
+    result: true
+  - name: "ushio4"
+    result: false
+  - name: "ushio5"
+    result: true
+  - name: "ushio6"
+    result: true
+  - name: "ushio7"
+    result: false
+  - name: "ushio8"
+    result: true
+  - name: "ushio9"
+    result: true
+  - name: "ushio10"
+    result: false
+  - name: "ushio11"
+    result: true
+  - name: "ushio12"
+    result: true

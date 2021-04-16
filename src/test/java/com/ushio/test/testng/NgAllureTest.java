@@ -41,7 +41,6 @@ public class NgAllureTest {
 
     @Test(priority = 5)
     void plusCountTest() {
-        Assert.assertEquals(CalculateUtils.plus(4, 2, 1, 1, 1, 1),10,"is equals??");
         //fail();
     }
 

@@ -59,9 +59,6 @@ public class AllureTest {
         int result1 = CalculateUtils.plus(4,2);
         int result2 = CalculateUtils.plus(2,2);
         int result3 = CalculateUtils.plus(2,1);
-        //这里老师没有细讲getResourceAsStream()方法的使用，可自行扩展学习
-//        System.out.println(this.getClass().getResourceAsStream("/1.png"));
-//        System.out.println(this.getClass().getClassLoader().getResourceAsStream("1.png"));
         Allure.addAttachment("pic",this.getClass().getResourceAsStream("/1.png"));
         assertAll("批量校验！",
                 ()->assertEquals(6,result1,"is equals??"),
