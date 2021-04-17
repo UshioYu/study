@@ -34,7 +34,7 @@ public class ContactPage extends BasePage{
     }
 
     public ContactPage deleteDepart(String departmentName){
-
+        return this;
     }
 
     public String getPartyInfo() {
