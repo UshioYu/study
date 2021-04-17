@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class ContactPage extends BasePage{
 
     private By partyInfo=By.cssSelector(".js_party_info");
+    private By partyName=By.id("party_name");
 
     public ContactPage(WebDriver webDriver, WebDriverWait webDriverWait) {
         super(webDriver, webDriverWait);
@@ -42,5 +43,11 @@ public class ContactPage extends BasePage{
         String text = webDriver.findElement(partyInfo).getText();
         System.out.println(text);
         return text;
+    }
+
+    public String getPartyName(){
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(partyName));
+        return webDriver.findElement(partyName).getText();
+
     }
 }
