@@ -4,6 +4,9 @@ import java.util.HashMap;
 
 public class Constant {
 
+    //selenium相关
+    public static final String BASEURL = "https://work.weixin.qq.com/wework_admin/frame";
+
     //用户信息
     public static final String CORPID = "ww681594090a0d29e1";
     public static final String CORPSECRET = "JDF9hU47wIBx44oLxt0ksKWfQTpIAHnlnHhTdM-1ZPM";
