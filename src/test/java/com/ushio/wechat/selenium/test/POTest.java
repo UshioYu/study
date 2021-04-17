@@ -1,6 +1,6 @@
 package com.ushio.wechat.selenium.test;
 
-import com.ushio.wechat.selenium.page.MainPage;
+import com.ushio.wechat.selenium.MainPage;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;

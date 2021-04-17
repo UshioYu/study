@@ -1,4 +1,4 @@
-package com.ushio.wechat.selenium.page;
+package com.ushio.wechat.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

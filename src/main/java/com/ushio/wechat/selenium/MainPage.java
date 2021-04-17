@@ -1,4 +1,4 @@
-package com.ushio.wechat.selenium.page;
+package com.ushio.wechat.selenium;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -24,7 +24,7 @@ import static com.ushio.wechat.util.Constant.BASEURL;
  * @author: ushio
  * @description:
  **/
-public class MainPage extends BasePage{
+public class MainPage extends BasePage {
 
     public MainPage() {
         initWebDriver();
@@ -79,7 +79,7 @@ public class MainPage extends BasePage{
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            System.exit(0);
+            webDriver.navigate().refresh();
         }
     }
 
