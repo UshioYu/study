@@ -2,6 +2,7 @@ package com.ushio.test.junit5;
 
 import com.ushio.test.utils.CalculateLjUtils;
 import org.junit.Ignore;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
@@ -15,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class ConcurrentTest {
 
     @RepeatedTest(10)
-    @Ignore
+    @Disabled
     void repeatedTest() {
         //junit.jupiter.execution.parallel.config.fixed.parallelism的值得小于RepeatedTest
         //的次数，不然加锁synchronized好像也不准

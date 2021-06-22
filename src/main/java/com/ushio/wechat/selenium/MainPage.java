@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import static com.ushio.wechat.util.Constant.BASEURL;
+import static com.ushio.wechat.util.Constants.BASEURL;
 
 /**
  * @author: ushio
